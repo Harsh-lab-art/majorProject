@@ -1,0 +1,59 @@
+# ---- Secrets (keep .env.example, never .env) ----
+.env
+.env.*
+!.env.example
+
+# ---- Node (omnitrace-api, omnitrace-web) ----
+node_modules/
+dist/
+build/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
+
+# ---- Python (omnitrace-engine) ----
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---- Generated forensic output (regenerate with cli.py / make_demo_image.py) ----
+reports/
+sample_data/
+omnitrace_reports/
+*.custody.jsonl
+
+# ---- Evidence / disk images and media: never commit (large, possibly sensitive) ----
+*.img
+*.dd
+*.raw
+*.E01
+*.e01
+*.Ex01
+*.dav
+*.es
+*.h264
+*.h265
+*.mp4
+*.avi
+*.acquisition.json
+# AI model weights (download separately, see engine README)
+*.onnx
+*.pt
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.log

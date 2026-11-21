@@ -1,0 +1,6 @@
+flask==3.0.3
+fpdf2==2.8.1
+pytest==8.3.3
+# Video analytics (motion / faces / optional YOLO objects). The engine still runs without it.
+opencv-python-headless==4.10.0.84
+# Optional, for E01 input:  pip install libewf-python
